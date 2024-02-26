@@ -4,7 +4,7 @@ Frontend:
 La vistas de este proyecto han sido realizadas con:
 vite + react
 
-Intalación Frontend:
+Instalación Frontend:
 -Entrar a la rama Frontend del repositorio
 -Descargar el proyecto en .zip 
 -Extraer el proyecto y abrirlo en la consola del computador
