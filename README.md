@@ -28,7 +28,7 @@ Instalacion Backend:
 -Extraer el proyecto y abrirlo en la consola del computador
 -Digitar en la consola npm install
 -Instalar las dependencias utilizadas hasta el momento en el frontend las cuales son:
-  -npm i extress nodemon cors cookie-parser vitecryptjs morgan doten
+  -npm i extress nodemon cors cookie-parser bcryptjs morgan doten
   
 -Para la base de datos
   -npm i pg sequelize zod
