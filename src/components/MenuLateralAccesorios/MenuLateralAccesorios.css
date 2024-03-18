@@ -1,0 +1,71 @@
+.menu-accesorios {
+    width: 20%;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 60px;
+    height: 100%;
+    position: fixed;
+  
+  }
+  
+  .categorias-text {
+    color: var(--color3);
+    position: absolute;
+  }
+  
+  .accesorio-informacio {
+    list-style-type: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    /* Opcional: quita el relleno predeterminado de la lista */
+  
+  
+  }
+  
+  .menu-categorias {
+    margin-right: 20px;
+    color: var(--color3);
+    cursor: pointer;
+  }
+  
+  .menu-categorias:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+    transition: 0.3s;
+    height: 2vh;
+    padding: 1vh;
+    border-radius: 10px;
+  }
+  
+  
+  .accesorio-informacio a li {
+    margin-bottom: 2vh;
+    color: var(--color3);
+    max-width: 6.5rem;
+    cursor: pointer;
+  }
+  
+  .accesorio-informacio a li:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+    transition: 0.3s;
+    height: 2vh;
+    padding: 1vh;
+    border-radius: 10px;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .categorias-text {
+      display: none;
+      /* Oculta el nombre "Categorias" en pantallas pequeñas */
+    }
+  
+    .accesorio-informacio {
+      font-size: 12px;
+    }
+  
+    .menu-accesorios {
+      width: 20%;
+  }
+  }

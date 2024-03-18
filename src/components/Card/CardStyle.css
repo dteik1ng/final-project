@@ -1,0 +1,232 @@
+@import url(../variables.css);
+
+.Card {
+  background-color: var(--color3);
+  color: var(--color1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container-img img {
+  width: 230px;
+  height: 190px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border-radius: 30px;
+}
+
+.overlay {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.button-overlay {
+  padding: 10px 10px;
+  background-color: #1e1e1e;
+  color: var(--color3);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.button-overlay a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.container-img:hover .overlay {
+  opacity: 1;
+}
+
+.container-img:hover .button-overlay {
+  opacity: 1;
+}
+
+.tittle-card {
+  font-size: 20px;
+}
+
+.description-card {
+  font-weight: bold;
+  font-size: 17px;
+  margin: -10px 0;
+}
+
+.body-card {
+  margin-top: 4%;
+  border-top: 2px solid var(--color1);
+}
+
+.body-card ul {
+  list-style: none;
+  translate: -40px;
+}
+
+.button-card {
+  display: flex;
+  justify-content: center;
+}
+
+.button-card-add {
+  padding: 10px 40px;
+  background-color: #1e1e1e;
+  color: var(--color3);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.button-card-add a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.button-card-add:hover {
+  transform: scale(1.05);
+  background-color: var(--color2);
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Diseño responsive del card */
+
+@media screen and (min-width: 967px) and (max-width: 1310px) {
+/*   .Card {
+    padding: 20px;
+    width: auto;
+    height: 90%;
+  } */
+
+  .container-img img {
+    width: 230px;
+    height: 180px;
+  }
+
+  .button-overlay {
+    padding: 10px 10px;
+  }
+
+  .description-card {
+    margin: -15px 0;
+  }
+
+  .body-card {
+    font-size: 15px;
+  }
+
+  .button-card-add {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 966px) {
+  .Card {
+    padding: 20px;
+    width: 300px;
+  }
+
+  .container-img img {
+    width: 150px;
+    height: 130px;
+  }
+
+  .button-overlay {
+    padding: 8px 8px;
+  }
+
+  .description-card {
+    margin: -8px 0;
+  }
+
+  .body-card {
+    font-size: 12px;
+  }
+
+  .button-card-add {
+    padding: 10px 10px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 739px) {
+  .Card {
+    padding: 14px;
+    width: 290px;
+  }
+
+  .container-img img {
+    width: 140px;
+    height: 120px;
+  }
+
+  .button-overlay {
+    padding: 7px 7px;
+  }
+
+  .description-card {
+    margin: -8px 0;
+  }
+
+  .body-card {
+    font-size: 11px;
+  }
+
+  .button-card-add {
+    padding: 8px 8px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .Card {
+    padding: 20px;
+    width: 170px;
+  }
+
+  .container-img img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .button-overlay {
+    padding: 7px 7px;
+  }
+
+  .description-card {
+    margin: -7px 0;
+  }
+
+  .body-card {
+    margin-top: 4%;
+    font-size: 10px;
+  }
+
+  .button-card-add {
+    padding: 8px 8px;
+    font-size: 8px;
+  }
+}

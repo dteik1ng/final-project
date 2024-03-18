@@ -1,0 +1,145 @@
+.Product-detalle {
+    overflow-x: auto;
+    background-color: var(--color4);
+    height: 120vh;
+  }
+
+  .imagen-producto{
+    position: relative;
+    top: 20px;
+    left: -70px;
+    z-index: 100;
+    border-radius: 100%;
+    background-color: var(--color6);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img{
+      width: 125px;
+      height: 125px;
+      border-radius: 100%;
+    }
+  }
+  
+.detalle-producto {
+    height: 50%;
+    width: 60%;
+    background-color: var(--color4);
+    margin-left: 55vh;
+    margin-top: 12%;
+    border: 2px solid var(--color1);
+    display: flex;
+    align-items: start;
+  }
+
+  
+.left-detalle {
+    background-color: var(--color6);
+    height: 100%;
+    width: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+
+  
+.icon-detalle,
+  .icono-detalle {
+    background-color: var(--color3); 
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin-bottom: 20px; 
+  }
+
+.edit-icon-detalle {
+    font-size: 25px;
+    color: var(--color1);
+  }
+  
+.img-icon-detalle {
+    font-size: 26px;
+    color: var(--color1);
+  }
+
+.detalle-from form{ 
+    width: 80%; 
+    margin: 5px auto;
+    align-items: center;
+  }
+
+.grupo-detalle { 
+    display: flex; 
+    justify-content: space-between; 
+  }
+  
+.campo-detalle {
+     flex-basis: 48%;
+     margin-bottom: 10px; 
+    margin-right: 40px; 
+  }
+  
+.campo-detalle label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: var(--color1);
+  }
+  
+.campo-detalle input {
+    padding:5px;
+    border-radius: 10px;
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px;
+  }
+
+.titulo-detalle{
+    color: var(--color1);
+    text-align: center;
+  }
+
+.campo-detalle .productico{
+    width: 80%;
+  }
+  
+.campo-detalle .productico-2{
+    width: 80%;
+    margin-left: 20%;
+  }
+
+.boton-detalle, .boton-detalle-2{
+    padding:5px;
+    border-radius: 15px;
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px;
+  }
+
+.boton-detalle a{
+    text-decoration: none;
+    color: var(--color3);
+  }
+
+.boton-detalle-2 a{
+    text-decoration: none;
+    color: var(--color3);
+  }
+
+.botoncitos{
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 

@@ -1,0 +1,605 @@
+@import url(../variables.css);
+
+.part-one {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  margin-bottom: 4%;
+  margin-left: 3%;
+}
+
+.tittle h1 {
+  font-size: 5.7em;
+  line-height: 1.1;
+}
+
+.tittle p {
+  font-size: 2.4em;
+  line-height: 1.1;
+  font-weight: lighter;
+  width: 600px;
+  word-wrap: break-word;
+}
+
+.button-part-one {
+  margin-top: 8%;
+  margin-left: 35%;
+  padding: 15px 30px;
+  font-size: 15px;
+  background-color: var(--color2);
+  border: none;
+  cursor: pointer;
+  color: var(--color3);
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-part-one a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.button-part-one a:hover {
+  color: var(--color2);
+}
+
+.button-part-one:hover {
+  background-color: var(--color3);
+  color: var(--color2);
+  transform: scale(1.05);
+}
+
+.img-part-one img {
+  width: 60%;
+  height: 100%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+/* Diseño responsive part 1 del body */
+
+@media screen and (min-width: 967px) and (max-width: 1254px) {
+  .tittle h1 {
+    font-size: 4em;
+    margin-top: 17%;
+    margin-left: 10%;
+  }
+
+  .tittle p {
+    font-size: 1.7em;
+    width: 400px;
+    margin-left: 10%;
+  }
+
+  .button-part-one {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .img-part-one img {
+    margin-left: 35%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 966px) {
+  .tittle h1 {
+    font-size: 3em;
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
+  .tittle p {
+    font-size: 1.3em;
+    width: 300px;
+    margin-left: 15%;
+  }
+
+  .button-part-one {
+    padding: 10px 20px;
+    font-size: 9px;
+  }
+
+  .img-part-one img {
+    margin-left: 25%;
+    width: 65%;
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .tittle h1 {
+    font-size: 2em;
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+
+  .tittle p {
+    font-size: 1em;
+    width: 200px;
+    margin-left: 25%;
+  }
+
+  .button-part-one {
+    padding: 10px 20px;
+    font-size: 8px;
+    margin-left: 40%;
+  }
+  .img-part-one img {
+    margin-top: 0%;
+    margin-left: 25%;
+    width: 70%;
+    height: 85%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .tittle h1 {
+    font-size: 1.2em;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+
+  .tittle p {
+    font-size: 0.8em;
+    width: 150px;
+    margin-left: 20%;
+  }
+
+  .button-part-one {
+    padding: 7px 10px;
+    font-size: 7px;
+  }
+  .img-part-one img {
+    margin-top: 3%;
+    margin-left: 35%;
+    width: 57%;
+    height: 85%;
+  }
+}
+
+/* parte dos de la homepage */
+
+.part-two {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color5);
+}
+
+.tittle-part-two h1 {
+  border-bottom: 3px solid var(--color3);
+  margin-top: 10%;
+  font-size: 2.8em;
+  width: 600px;
+  word-wrap: break-word;
+}
+
+.tittle-part-two p {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.tittle-part-two ul {
+  list-style: none;
+  font-weight: lighter;
+  font-size: 20px;
+  translate: -35px;
+}
+
+.img-part-two img {
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  height: 90%;
+}
+.humo {
+  width: 6%;
+  height: 1%;
+  margin: 0 2%;
+}
+.faciles {
+  width: 4%;
+  height: 1%;
+  margin: -1% 2%;
+}
+.carne {
+  width: 5%;
+  height: 1%;
+  margin: -1% 2%;
+}
+.acero {
+  width: 4%;
+  height: 1%;
+  margin: -1% 2%;
+}
+
+/* Diseño responsive part 2 del body */
+
+@media screen and (min-width: 967px) and (max-width: 1254px) {
+  .tittle-part-two h1 {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 2em;
+    width: 500px;
+  }
+
+  .tittle-part-two p {
+    font-size: 1.5em;
+    margin-left: 10%;
+  }
+
+  .tittle-part-two ul {
+    font-size: 1.3em;
+    margin-left: 10%;
+  }
+
+  .img-part-two img {
+    margin-top: 5%;
+    width: 80%;
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 966px) {
+  .tittle-part-two h1 {
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 1.5em;
+    width: 300px;
+  }
+
+  .tittle-part-two p {
+    font-size: 1.1em;
+    margin-left: 15%;
+  }
+
+  .tittle-part-two ul {
+    font-size: 1em;
+    margin-left: 14%;
+  }
+
+  .img-part-two img {
+    margin-left: 22%;
+    margin-top: 5%;
+    width: 65%;
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .tittle-part-two h1 {
+    margin-top: 10%;
+    margin-left: 20%;
+    font-size: 1.1em;
+    width: 250px;
+  }
+
+  .tittle-part-two p {
+    font-size: 0.8em;
+    margin-left: 20%;
+  }
+
+  .tittle-part-two ul {
+    font-size: 0.7em;
+    margin-left: 19%;
+  }
+
+  .img-part-two img {
+    margin-left: 30%;
+    margin-top: 3%;
+    width: 50%;
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .tittle-part-two h1 {
+    margin-top: 10%;
+    margin-left: 20%;
+    font-size: 0.8em;
+    width: 170px;
+  }
+
+  .tittle-part-two p {
+    font-size: 0.6em;
+    margin-left: 20%;
+  }
+
+  .tittle-part-two ul {
+    font-size: 0.6em;
+    margin-left: 18%;
+  }
+
+  .img-part-two img {
+    margin-left: 37%;
+    margin-top: 10%;
+    width: 50%;
+    height: 70%;
+  }
+}
+
+/* tercera parte de la homepage */
+
+.part-three {
+  margin-bottom: 5%;
+}
+
+.part-three h1 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-body {
+  margin: 3% 5% 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 60px;
+}
+
+.card-productos-destacados {
+  background-color: var(--color3);
+  color: var(--color1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.img-productos-destacados {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img-productos-destacados img {
+  width: 230px;
+  height: 190px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border-radius: 30px;
+}
+
+.overlay-productos-destacados {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.button-overlay-productos-destacados {
+  padding: 10px 10px;
+  background-color: #1e1e1e;
+  color: var(--color3);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.button-overlay-productos-destacados a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.img-productos-destacados:hover .overlay-productos-destacados {
+  opacity: 1;
+}
+
+.img-productos-destacados:hover .button-overlay-productos-destacados {
+  opacity: 1;
+}
+
+.tittle-card-productos-destacados {
+  font-size: 20px;
+}
+
+.description-card-productos-destacados {
+  font-weight: bold;
+  font-size: 17px;
+  margin: -10px 0;
+}
+
+.body-card-productos-destacados {
+  margin-top: 4%;
+  border-top: 2px solid var(--color1);
+}
+
+.body-card-productos-destacados ul {
+  list-style: none;
+  translate: -40px;
+}
+
+.price-productos-destacados {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.button-part-three {
+  background-color: var(--color2);
+  padding: 10px 15px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  color: var(--color3);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-part-three:hover {
+  background-color: var(--color3);
+  transform: scale(1.05);
+}
+
+.button-part-three a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.button-part-three a:hover {
+  color: var(--color2);
+}
+
+/* Diseño responsive part 3 del body */
+
+@media screen and (min-width: 967px) and (max-width: 1454px) {
+  .part-three h1 {
+    font-size: 1.7em;
+  }
+
+  .cards-body {
+    margin: 3% 5% 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 60px;
+  }
+
+  .button-part-three {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 986px) {
+  .part-three h1 {
+    font-size: 1.4em;
+  }
+  .cards-body {
+    margin: 3% 5% 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 2fr));
+    gap: 60px;
+  }
+  .button-part-three {
+    padding: 10px 20px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .part-three h1 {
+    font-size: 1em;
+  }
+  .button-part-three {
+    padding: 10px 20px;
+    font-size: 8px;
+  }
+  .cards-body {
+    margin: 3% 5% 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 2fr));
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .part-three h1 {
+    font-size: 0.8em;
+  }
+  .button-part-three {
+    padding: 7px 10px;
+    font-size: 7px;
+  }
+  .cards-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* parte cuatro de el body  */
+
+.part-four {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+.icons-part-four {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-homepage {
+  font-size: 45px;
+  position: absolute;
+  margin: 20px -70px;
+}
+
+.container-icons p {
+  margin-top: -15px;
+}
+
+/* Diseño responsive part 4 del body */
+
+@media screen and (min-width: 967px) and (max-width: 1254px) {
+  .icon-homepage {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 967px) {
+  .icon-homepage {
+    font-size: 30px;
+    margin: 20px 0px 0px 0px;
+  }
+  .container-icons h3 {
+    font-size: 17px;
+    margin-left: 45px;
+  }
+  .container-icons p {
+    margin-top: -15px;
+    font-size: 15px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 670px) {
+  .icon-homepage {
+    font-size: 30px;
+    margin: 20px 0px 0px 0px;
+  }
+  .container-icons h3 {
+    font-size: 15px;
+    margin-left: 45px;
+  }
+  .container-icons p {
+    margin-top: -15px;
+    font-size: 13px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .icon-homepage {
+    font-size: 25px;
+    margin: 20px 0px 0px 0px;
+  }
+  .container-icons h3 {
+    font-size: 12px;
+    width: 10px;
+    margin-left: 35px;
+  }
+  .container-icons p {
+    margin-top: -10px;
+    width: 80px;
+    font-size: 9px;
+    margin-left: 35px;
+  }
+}

@@ -1,0 +1,149 @@
+@import url(../variables.css);
+
+.container-cards {
+  max-width: 100%;
+  padding: 10px 0px;
+  margin: 2% 5%;
+}
+
+.cards {
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 66px;
+}
+
+.filters {
+  position: fixed;
+  background-color: var(--color5);
+  padding: 10px 25px 30px;
+  margin-left: -5%;
+  z-index: 4;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.rango-precio {
+  color: var(--color3);
+  margin-top: 10%;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.inputs-precio-filtro {
+  width: 120px;
+  border: none;
+  padding: 3px 0px;
+}
+
+.buttons-filtros {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.button-limpiar-filtro {
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-limpiar-filtro:hover {
+  background-color: var(--color7);
+}
+
+/*   Diseño responsive de las cards */
+@media screen and (min-width: 1254px) and (max-width: 1554px) {
+  .container-cards {
+    margin-top: 2%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px 24px;
+  }
+}
+
+@media screen and (min-width: 967px) and (max-width: 1254px) {
+  .container-cards {
+    margin-top: 2%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px 24px;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 967px) {
+  .container-two-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .filters {
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 670px) {
+  .container-two-cards {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 601px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .visible {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .container-two-cards {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    margin-bottom: 15%;
+  }
+
+  .filters {
+    padding: 0px 10px 20px;
+  }
+
+  .price-filter h1 {
+    font-size: 20px;
+  }
+
+  .rango-precio {
+    font-size: 13px;
+  }
+
+  .inputs-precio-filtro {
+    padding: 2px 0px;
+  }
+
+  .buttons-filtros {
+    margin-top: 15%;
+  }
+
+  .button-limpiar-filtro {
+    padding: 7px 15px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,144 @@
+/* seguidor de pasos */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 35%;
+  margin-top: 3%;
+  justify-content: center;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--color3);
+  text-align: center;
+  color: var(--color6);
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.step.completed {
+  background-color: var(--color3);
+  border-color: var(--color3);
+  color: var(--color1);
+}
+
+.step-line {
+  width: 10%;
+  /* Permite que la línea ocupe todo el espacio restante */
+  height: 2px;
+  background-color: #e5e5e5;
+  margin: 0 10px;
+}
+
+/* datos personales*/
+.pasarela1,
+.pasarela2,
+.pasarela3 {
+  background-color: var(--color3);
+  width: 90%;
+  /* Ancho ajustado para pantallas pequeñas */
+  max-width: 600px;
+  /* Máximo ancho para pantallas grandes */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--color3);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.pasarela1 h2,
+.datos-bancarios-titulo,
+.pasarela3 h2 {
+  text-align: center;
+  color: var(--color1);
+}
+
+
+
+.datos-bancarios-select select {
+  border: none;
+  color: var(--color3);
+  background-color: var(--color1);
+  padding: 5px;
+  margin: 10px;
+  max-width: 40%;
+}
+
+.pasarela-group {
+  display: flex;
+  flex-direction: column;
+  /* Alinea los elementos verticalmente */
+  margin-bottom: 10px;
+}
+
+.campo-pasarela-1 {
+  margin-left: 0;
+  /* Elimina el margen izquierdo para este campo */
+}
+
+.pasarela-group label {
+  margin-bottom: 5px;
+  /* Reduce el margen inferior del label */
+}
+
+.pasarela1 input,
+.datos-bancarios-input,
+.pasarela3 input {
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.datos-bancarios-select,
+.datos-bancarios-select select {
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+}
+
+.pasarela1-boton,
+.datos-bancarios-boton,
+.pasarela3-boton {
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 15px;
+  background-color: var(--color1);
+  border: none;
+  color: var(--color3);
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+  box-sizing: border-box;
+}
+
+.pasarela1 button:hover,
+.datos-bancarios-boton:hover,
+.pasarela3-boton:hover {
+  background-color: var(--color5);
+  color: var(--color4);
+  transform: scale(1.05);
+}
+
+/* Media queries para ajustes en diferentes tamaños de pantalla */
+@media (min-width: 768px) {
+  .pasarela-group {
+    flex-direction: row;
+    /* Vuelve a la dirección original en pantallas más grandes */
+  }
+
+  .campo-pasarela-1 {
+    margin-left: 20%;
+    /* Restablece el margen izquierdo para este campo */
+  }
+
+  .step-indicator {
+    margin-left: 5rem;
+  }
+}

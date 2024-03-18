@@ -1,0 +1,146 @@
+.edit-user {
+  overflow-x: auto;
+  background-color: var(--color4);
+  height: 130vh;
+
+}
+
+.edit-card {
+  height: 50%;
+  width: 60%;
+  background-color: var(--color4);
+  margin-left: 55vh;
+  margin-top: 12%;
+  border: 2px solid var(--color1);
+  display: flex;
+}
+
+.left-user {
+  background-color: var(--color6);
+  height: 100%;
+  width: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+.icond-wrapper,
+.icone-wrapper {
+  background-color: var(--color3); 
+  width: 50px;
+  height: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  margin-bottom: 20px; 
+}
+.delete-icon {
+  font-size: 35px;
+  color: var(--color1);
+}
+
+.edit-icon {
+  font-size: 26px;
+  color: var(--color1);
+}
+
+
+.perfil-form { 
+width: 70%; 
+margin: 5px auto;
+
+}
+
+.grupo-perfil { 
+display: flex; 
+justify-content: space-between; 
+}
+
+.campo-perfil {
+ flex-basis: 48%;
+ margin-bottom: 10px; 
+ margin-right: 25px; 
+}
+
+label { 
+display: block; 
+margin-bottom: 5px; 
+font-weight: bold; 
+color: var(--color1);
+}
+
+.perfil-form p {
+padding:5px;
+border-radius: 10px;
+border: 1px solid var(--color1);
+background-color: var(--color1);
+color: var(--color3);
+padding: 10px;
+}
+.titulo-perfil{
+  color: var(--color1);
+  text-align: center;
+}
+ .campo-perfil .chiquito{
+  width: 80%;
+  text-align: center;
+ 
+
+}
+
+.campo-perfil .chiquito-2{
+  width: 90%;
+  margin-left: 20%;
+
+}
+.campo-perfil .rol{
+  width: 105%;
+  text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .edit-card {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .grupo-perfil { 
+    display: flex; 
+    flex-direction: column;
+   
+}
+.campo-perfil .chiquito-2{
+  width: 90%;
+  margin-left: 1%;
+
+}
+.edit-user {
+  overflow-x: auto;
+  background-color: var(--color4);
+  height: 150vh;
+
+}
+}
+
+@media only screen and (max-width: 390px){
+.edit-user {
+  overflow-x: auto;
+  background-color: var(--color4);
+  height: 170vh;
+
+}
+.grupo-perfil { 
+  display: flex; 
+  flex-direction: column;
+
+}
+
+}

@@ -1,0 +1,36 @@
+/* Estilos para .pagar-right */
+.pagar-right {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    float: right;
+}
+
+.pagar-right h1 {
+    text-align: center;
+    color: var(--color4);
+    padding: 3vh;
+    font-size: 50px;
+    border-bottom: 5px solid var(--color3);
+}
+
+.pagar-right h4 {
+    font-size: 30px;
+    padding: 3vh;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 868px) {
+
+
+    .pagar-right {
+        width: 100%;
+        float: none;
+    }
+
+    .pagar-right {
+        margin-top: 20px;
+    }
+
+
+}

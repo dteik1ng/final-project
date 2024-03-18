@@ -1,0 +1,205 @@
+.boton-pago2 {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 3vh;
+    padding: 0;
+    background-color: var(--color3);
+}
+
+
+
+.formulario-pago a {
+    text-decoration: none;
+}
+
+
+
+.formulario-pago form {
+    margin-left: 8vh;
+}
+
+.formulario-pago {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: var(--color3);
+}
+
+
+
+.formulario-pagos h1 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--color1);
+}
+
+.banco {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.numero-tarjeta {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 5%;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.bancos {
+    display: block;
+    margin-left: -1%;
+    border-radius: 10px;
+    border: 1px solid var(--color1);
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.inline-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-fields label {
+    flex: 1;
+    margin-right: 6%;
+
+
+}
+
+.bancos2 {
+    display: block;
+    margin-right: 5%;
+    margin-left: 3%;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--color1);
+    width: 70%;
+    text-align: center;
+
+}
+
+.vencimiento {
+    display: block;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--color1);
+    width: 40%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.numero-tarjetas {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+}
+
+.vencimiento {
+    display: block;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--color1);
+    width: 40%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.vencimiento2 {
+    width: 50%;
+}
+
+.vencimiento1 {
+    width: 200%;
+}
+
+.form-grupo button[type="submit"] {
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.form-grupo button[type="submit"]:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .formulario-pago {
+        width: 100%;
+    }
+
+    .boton-pago2,
+    .boton-pagar {
+        width: 20%;
+        font-size: 16px;
+    }
+
+    .banco {
+        width: 70%;
+    }
+
+    .bancos {
+        width: 90%;
+    }
+
+    .bancos2 {
+        width: 70%;
+    }
+
+    .vencimiento1 {
+        width: 210%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+    .vencimiento1 {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .formulario-pago {
+        width: 100%;
+    }
+
+    .boton-pago2,
+    .boton-pagar {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .banco {
+        width: 70%;
+    }
+
+    .bancos {
+        width: 90%;
+    }
+
+    .bancos2 {
+        width: 70%;
+    }
+
+    .vencimiento1 {
+        width: 100%;
+    }
+}

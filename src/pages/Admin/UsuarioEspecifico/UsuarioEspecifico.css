@@ -1,0 +1,98 @@
+.edit-user-especifico {
+    overflow-x: auto;
+    background-color: var(--color4);
+    height: 120vh;
+   
+  }
+  
+.edit-card-especifico {
+    height: 50%;
+    width: 60%;
+    background-color: var(--color4);
+    margin-left: 55vh;
+    margin-top: 12%;
+    border: 2px solid var(--color1);
+    display: flex;
+    align-items: start;
+  }
+  
+.left-user-especifico {
+    background-color: var(--color6);
+    height: 100%;
+    width: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+.icond-especifico,
+  .icone-especifico {
+    background-color: var(--color3); 
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin-bottom: 20px; 
+  }
+.delete-icon-especifico {
+    font-size: 35px;
+    color: var(--color1);
+  }
+  
+.edit-icon-especifico {
+    font-size: 26px;
+    color: var(--color1);
+  }
+
+  
+
+
+
+.especifico { 
+  width: 70%; 
+  margin: -2px auto;
+}
+
+.grupo-campos-user { 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.campo-user {
+   flex-basis: 48%;
+    margin-bottom: 10px; 
+    margin-right: 25px;
+  }
+
+ .especifico label { 
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: bold; 
+  color: var(--color1);
+}
+
+.campo-user input {
+  width: 100%;
+  padding:5px;
+  border-radius: 10px;
+  border: 1px solid var(--color1);
+  background-color: var(--color1);
+  color: var(--color3);
+  }
+
+  .titulo-user{
+    color: var(--color1);
+    text-align: center;
+  }
+  .campo-user .userp{
+    width: 80%;
+  }
+  .campo-user .usuario{
+    width: 80%;
+    margin-left: 20%;
+  }

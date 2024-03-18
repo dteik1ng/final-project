@@ -1,0 +1,124 @@
+@import url(../../components/variables.css);
+
+.usuario-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.usuario-box{
+  background-color: var(--color5);
+  border-radius: 20px;
+  padding: 1% 3%;
+  text-align: center;
+}
+
+.input-field-usuario{
+  margin-top: 5%;
+  padding: 4% 10%;
+  border-radius: 5px;
+  border: none;
+}
+
+.container-buttons-agregar-users{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-buttons-agregar-users a{
+  text-decoration: none;
+  color: var(--color1);
+}
+
+.button-usuario{
+  margin-top: 7%;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: var(--color4);
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+}
+
+.button-usuario:hover{
+  background-color: var(--color7);  
+}
+
+.link-usuario{
+  text-decoration: none;
+  color: var(--color3);
+  transition: all 0.4s ease-in-out;
+}
+
+.link-usuario:hover{
+  color: var(--color6);
+  border-bottom: 1px solid var(--color6);
+}
+
+
+@media screen and (min-width: 967px) and (max-width: 1310px) {
+  .usuario-container {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 967px) {
+  .usuario-container {
+    margin-top: 10%;
+  }
+
+  .usuario-box h1 {
+    margin-bottom: 10%;
+    font-size: 30px;
+  }
+
+  .input-field-usuario {
+    font-size: 13px;
+  }
+
+  .button-usuario {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 4% 18%;
+    font-size: 12px;
+  }
+
+  .text-usuario {
+    margin-top: 5%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .usuario-container {
+    margin-top: 10%;
+  }
+
+  .usuario-box h1 {
+    margin-bottom: 10%;
+    font-size: 30px;
+  }
+
+  .input-field-usuario {
+    font-size: 13px;
+  }
+
+  .button-usuario {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 4% 18%;
+    font-size: 12px;
+  }
+
+  .text-usuario {
+    margin-top: 5%;
+    font-size: 14px;
+  }
+}
+
+
+
+

@@ -1,0 +1,251 @@
+@import url(../../components/variables.css);
+
+.container-contacto {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.contact-form {
+  background-color: var(--color4); 
+  color: var(--color1); 
+  padding: 30px;
+  border-radius: 10px; 
+  width: 50%;
+}
+
+.contact-form p{
+  max-width: 370px;
+  margin-left: 3%;
+}
+
+.contact-form h2{
+  margin-left: 3%;
+}
+
+.boton-contacto {
+  margin-top: 1%;
+  margin-left: 2%;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: var(--color1);
+  border: none;
+  color: var(--color3);
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  width: 50%;
+}
+
+.boton-contacto:hover {
+  background-color: var(--color5) ;
+  color: var(--color4); 
+  transform: scale(1.05);
+}
+
+.info-container-contacto {
+  background-color: var(--color1);
+  color: var(--color4);
+  border-radius: 10%;
+  padding: 20px;
+  width: 250px; 
+  position: absolute; 
+  top: -2%; 
+  left: 55%; 
+  margin-top: 15%;
+  height: 40%;
+}
+
+.info-container-contacto a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-container-contacto ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.info-container-contacto li {
+  display: flex; 
+  align-items: center; 
+  margin-top: 15%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none; 
+  background-color: transparent;
+  border-bottom: 1px solid var(--color1); 
+  outline: none; 
+  padding: 5px; 
+  width: 50%; 
+}
+
+.icono-correo, 
+.icono-telefono,
+.icono-hora{
+  margin: 0   0 -5px;
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+
+/* diseño responsive */
+
+@media screen and (min-width: 1210px) and (max-width: 1554px) {
+  
+  .contact-form {
+    width: 60%;
+  }
+  
+  .info-container-contacto {
+    padding: 20px;
+    width: 250px; 
+    top: -1%;
+    margin-top: 17%;
+  }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1210px) {
+  .contact-form {
+    width: 70%;
+  }
+  
+  .info-container-contacto {
+    padding: 20px;
+    width: 250px; 
+    top: -1%;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1019px) {
+  .contact-form {
+    width: 90%;
+  }
+  
+  .info-container-contacto {
+    padding: 20px;
+    width: 250px; 
+    top: -1%;
+    margin-top: 22%;
+  }
+}
+
+@media screen and (min-width: 705px) and (max-width: 799px) {
+  .contact-form {
+    width: 90%;
+  }
+  
+  .info-container-contacto {
+    padding: 20px;
+    width: 200px; 
+    left: 60%;
+    top: -1%;
+    height: 30%;
+    margin-top: 25%;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 704px){
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form h2{
+    font-size: 18px;
+  }
+
+  .contact-form p{
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .form-group label{
+    font-size: 15px;
+    margin-left: -2%;
+  }
+
+  .form-group input{
+    width: 150px;
+    margin-left: -2%;
+  }
+
+  .form-group textarea{
+    width: 150px;
+    margin-left: -2%;
+  }
+
+  .boton-contacto{
+    width: 190px;
+  }
+  
+  .info-container-contacto {
+    padding: 20px;
+    width: 200px; 
+    left: 50%;
+    top: -1%;
+    height: 30%;
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px){
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form h2{
+    font-size: 18px;
+    width: 150px;
+  }
+
+  .contact-form p{
+    font-size: 13px;
+    width: 120px;
+  }
+
+  .form-group label{
+    font-size: 13px;
+    margin-left: -2%;
+  }
+
+  .form-group input{
+    width: 110px;
+    margin-left: -2%;
+  }
+
+  .form-group textarea{
+    width: 110px;
+    margin-left: -2%;
+  }
+
+  .boton-contacto{
+    width: 130px;
+  }
+  
+  .info-container-contacto {
+    padding: 20px;
+    width: 130px; 
+    left: 50%;
+    top: -1%;
+    height: 20%;
+    margin-top: 40%;
+  }
+
+  .info-container-contacto h3{
+    font-size: 15px;
+  }
+
+  .info-container-contacto ul{
+    font-size: 10px;
+  }
+
+  .info-container-contacto .icono-correo, .icono-hora, .icono-telefono{
+    font-size: 15px;
+  }
+}

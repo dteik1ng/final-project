@@ -1,0 +1,98 @@
+/* Importar variables desde variables.css */
+@import url(../../variables.css);
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 8%;
+    background-color: var(--color1);
+    height: 100%;
+    position: fixed;
+}
+
+/* Estilos para la sección de usuario */
+.user-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la imagen de usuario */
+.user-image {
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: 15%;
+}
+
+/* Estilos para la sección de menú */
+.menu-section {
+    list-style: none;
+}
+
+/* Estilos para los elementos de menú */
+.menu-items {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los elementos de lista de menú */
+.menu-items li {
+    margin-bottom: 15%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para los enlaces de menú */
+.menu-items a {
+    display: block;
+    padding: 10px;
+    width: 20px;
+    color: var(--color3);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.menu-items li {
+    position: relative;
+}
+
+.menu-items li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background-color: var(--color1);
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-items a:hover + .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilos para los enlaces de menú al pasar el cursor sobre ellos */
+.menu-items .link:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.menu-items .salir:hover{
+    background-color: var(--color2);
+}
+
+/* Estilos de los iconos */
+.profile, .usersIcno, .productsIcono, .sales, .proveedores, .salir-icono {
+    font-size: 20px;
+}

@@ -1,0 +1,359 @@
+@import url(../../../components/variables.css);
+
+/* lista de los usuarios */
+
+.UsuariosContainer {
+  display: flex;
+  background-color: var(--color4);
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  height: 100vh;
+}
+
+/*   barra de busqueda */
+
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 0px;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*   tabla de los usuarios */
+
+.table-usuarios {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: 1px solid var(--color3);
+}
+
+.table-usuarios th,
+.table-usuarios td {
+  padding: 10px;
+  text-align: center;
+}
+
+.table-usuarios thead tr {
+  border-bottom: 1px solid var(--color3);
+}
+
+.table-usuarios th {
+  background-color: var(--color5);
+}
+
+.table-usuarios tr:nth-child(even) {
+  background-color: var(--color5);
+  color: var(--color3);
+}
+
+.table-usuarios tr:nth-child(odd) {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+.header-table-users{
+  color: var(--color3);
+}
+
+/*   botones de la lista de los usuarios */
+
+.button-usuario-especifico,
+.Editar-usuario,
+.Eliminar-usuario {
+  border: none;
+  padding: 6px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.button-usuario-especifico a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.button-usuario-especifico {
+  background-color: #007bff;
+}
+
+.Editar-usuario {
+  background-color: #4caf50;
+  color: var(--color3);
+}
+
+.Eliminar-usuario {
+  background-color: var(--color2);
+  color: var(--color3);
+}
+
+.buttons-users {
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+/*   paginacion */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.pagination-container button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--color5);
+  color: var(--color3);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination-container button:hover {
+  background-color: var(--color7);
+  color: var(--color1);
+}
+
+/*   agregar un nuevo usuario */
+
+.Agregar-usuario {
+  background-color: #4caf50;
+  color: var(--color3);
+  border: none;
+  padding: 8px 10px;
+  text-align: right;
+  display: flex;
+  font-size: 14px;
+  margin-top: 40%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buttons-agg-user {
+  position: absolute;
+  margin-top: 30px;
+  margin-right: 74%;
+}
+
+/* formulario de agregar un nuevo usuario */
+
+.add-user-form {
+  position: absolute;
+  background-color: var(--color5);
+  margin-top: 6%;
+  padding: 1% 6% 2% 6%;
+  border-radius: 18px;
+  border: 3px solid var(--color3);
+}
+
+.add-user-form h3 {
+  color: var(--color3);
+  font-size: 27px;
+  margin-bottom: 15%;
+}
+
+.campos-form-user {
+  color: var(--color3);
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.inputs-form-user {
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+
+/* botones del formulario de agregar un nuevo usuario */
+
+.container-button-form-user {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-agg-user-guardar {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #4caf50;
+  color: var(--color3);
+  font-weight: 500;
+}
+
+.button-agg-user-guardar:hover {
+  background-color: #3c773e;
+  color: var(--color1);
+}
+
+.button-agg-user-cancelar {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color2);
+  color: var(--color3);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-agg-user-cancelar:hover {
+  background-color: #9a0404;
+  color: var(--color1);
+}
+
+/* formulario de editar un usuario */
+
+.edit-user-form {
+  position: absolute;
+  background-color: var(--color5);
+  margin-top: 6%;
+  padding: 1% 6% 2% 6%;
+  border-radius: 18px;
+  border: 3px solid var(--color3);
+}
+
+.edit-user-form h3 {
+  color: var(--color3);
+  font-size: 27px;
+  margin-bottom: 15%;
+}
+
+.campos-form-edit-user {
+  color: var(--color3);
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.inputs-form-edit-user {
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+
+/* botones del formulario editar un usuario */
+
+.container-button-form-edit-user {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-guardar-edit {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #4caf50;
+  color: var(--color3);
+  font-weight: 500;
+}
+
+.button-guardar-edit:hover {
+  background-color: #3c773e;
+  color: var(--color1);
+}
+
+.button-cancelar-edit {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color2);
+  color: var(--color3);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-cancelar-edit:hover {
+  background-color: #9a0404;
+  color: var(--color1);
+}
+
+
+/* Diseño responsive */
+
+@media screen and (min-width: 967px) and (max-width: 1310px) {
+  .UsuariosContainer {
+    margin-left: 2%;
+  }
+
+  .table-usuarios {
+    width: 82%;
+  }
+
+  .buttons-agg {
+    margin-right: 70%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 3% 2% 3%;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 967px) {
+  .buttons-agg {
+    margin-right: 60%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 2% 2% 2%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 740px) {
+  .buttons-agg {
+    margin-right: 50%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 1.5% 2% 1.5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .UsuariosContainer {
+    margin-left: 2%;
+  }
+
+  .buttons-agg {
+    margin-right: 5%;
+  }
+
+  .table-usuarios {
+    width: 100%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 2% 2% 2%;
+  }
+}

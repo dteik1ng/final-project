@@ -1,0 +1,388 @@
+@import url(../../../components/variables.css);
+
+/* lista de los usuarios */
+
+.ProductosContainer {
+  display: flex;
+  background-color: var(--color4);
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  height: 100vh;
+}
+
+.export {
+  border: none;
+  text-decoration: none;
+  color: var(--color3);
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+  border-radius: 10px;
+  color: var(--color1);
+  border: 1px solid var(--color1);
+}
+
+.export:hover {
+  border: none;
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(102, 255, 0, 1);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(102, 255, 0, 1);
+  box-shadow: 0px 0px 4px 2px rgba(102, 255, 0, 1);
+}
+
+/*   barra de busqueda */
+
+.ProductosContainer.search-container {
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  left: -35rem;
+  margin-top: 5%;
+
+}
+
+.ProductosContainer .search-input {
+  padding: 8px;
+  margin-right: 0px;
+}
+
+.ProductosContainer .search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*   tabla de los usuarios */
+
+.table-productos {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: 1px solid var(--color3);
+}
+
+.table-productos th,
+.table-productos td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--color1);
+}
+
+.table-productos thead tr {
+  border-bottom: 1px solid var(--color3);
+}
+
+.table-productos th {
+  background-color: var(--color5);
+}
+
+.table-productos tr:nth-child(even) {
+  color: var(--color1);
+  background-color: var(--color3);
+
+}
+
+.table-productos tr:nth-child(odd) {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.header-product-table{
+  color: var(--color3);
+}
+
+/*   botones de la lista de los usuarios */
+
+.buttons-products,
+.Editar-producto,
+.Eliminar-producto {
+  border: none;
+  padding: 6px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.buttons-products-especifico a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.buttons-products-especifico {
+  background-color: #007bff;
+}
+
+.Editar-producto {
+  color: var(--color1);
+  background-color: var(--color3);
+}
+
+.Eliminar-producto {
+  color: var(--color1);
+  background-color: var(--color3);
+
+}
+
+.buttons-producto {
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+/*   paginacion */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.pagination-container button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--color5);
+  color: var(--color3);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination-container button:hover {
+  background-color: var(--color7);
+  color: var(--color1);
+}
+
+/*   agregar un nuevo usuario */
+
+.Agregar-producto {
+  background-color: #000000;
+  color: var(--color3);
+  border: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 4.5rem;
+
+}
+
+.Agregar-producto a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.buttons-agg button {
+  position: relative;
+  margin-right: 10%;
+  left: 21rem;
+
+}
+
+/* formulario de agregar un nuevo usuario */
+
+.add-producto-form {
+  position: absolute;
+  background-color: var(--color5);
+  margin-top: 6%;
+  padding: 1% 6% 2% 6%;
+  border-radius: 18px;
+  border: 3px solid var(--color3);
+}
+
+.add-producto-form h3 {
+  color: var(--color3);
+  font-size: 27px;
+  margin-bottom: 15%;
+}
+
+.campos-form-producto {
+  color: var(--color3);
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.inputs-form-producto {
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+
+/* botones del formulario de agregar un nuevo usuario */
+
+.container-button-form-producto {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-agg-producto-guardar {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #4caf50;
+  color: var(--color3);
+  font-weight: 500;
+}
+
+.button-agg-producto-guardar:hover {
+  background-color: #3c773e;
+  color: var(--color1);
+}
+
+.button-agg-producto-cancelar {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color2);
+  color: var(--color3);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-agg-producto-cancelar:hover {
+  background-color: #9a0404;
+  color: var(--color1);
+}
+
+/* formulario de editar un usuario */
+
+.edit-product-form {
+  position: absolute;
+  background-color: var(--color5);
+  margin-top: 6%;
+  padding: 1% 6% 2% 6%;
+  border-radius: 18px;
+  border: 3px solid var(--color3);
+}
+
+.edit-product-form h3 {
+  color: var(--color3);
+  font-size: 27px;
+  margin-bottom: 15%;
+}
+
+.campos-form-edit-product {
+  color: var(--color3);
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.inputs-form-edit-product {
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+
+/* botones del formulario editar un usuario */
+
+.container-button-form-edit-product {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-guardar-edit {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #4caf50;
+  color: var(--color3);
+  font-weight: 500;
+}
+
+.button-guardar-edit:hover {
+  background-color: #3c773e;
+  color: var(--color1);
+}
+
+.button-cancelar-edit {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color2);
+  color: var(--color3);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-cancelar-edit:hover {
+  background-color: #9a0404;
+  color: var(--color1);
+}
+
+
+/* Diseño responsive */
+
+@media screen and (min-width: 967px) and (max-width: 1310px) {
+  .UsuariosContainer {
+    margin-left: 2%;
+  }
+
+  .table-usuarios {
+    width: 82%;
+  }
+
+  .buttons-agg {
+    margin-right: 70%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 3% 2% 3%;
+  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 967px) {
+  .buttons-agg {
+    margin-right: 60%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 2% 2% 2%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 740px) {
+  .buttons-agg {
+    margin-right: 50%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 1.5% 2% 1.5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .UsuariosContainer {
+    margin-left: 2%;
+  }
+
+  .buttons-agg {
+    margin-right: 5%;
+  }
+
+  .table-usuarios {
+    width: 100%;
+  }
+
+  .add-user-form,
+  .edit-user-form {
+    padding: 1% 2% 2% 2%;
+  }
+}
