@@ -18,7 +18,7 @@ export const creardetalleFactura = async (req, res) => {
   if (!productoExistente) {
     return res.status(404).json({ message: 'Producto no encontrado' });
   }
-
+/* Esto es logica, toda operacion matematica o que tenga una funcion con operaciones es considerada logica */
   const subtotal = (req.body.cantidad * productoExistente.precio)
 
   const creardetalleFactura = await detalleFactura.create({...req.body, subtotal})
