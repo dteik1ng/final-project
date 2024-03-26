@@ -39,12 +39,8 @@ export const verificarToken = (token) => {
           token,
           usuario: {
             id: usuario.id,
-            username: usuario.username,
-            correo: usuario.correo,
-            telefono: usuario.telefono,
-            estado: usuario.estado,
-            rol: usuario.rol,
-          },
+            correo: usuario.correo
+          }
         });
       });
     } catch (error) {
